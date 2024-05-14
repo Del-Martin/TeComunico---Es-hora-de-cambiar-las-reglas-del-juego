@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compañía telefónica que ofrezce servicios de datos, internet y llamadas.">
+    <meta name="keywords" content="llamadas, fibra, internet, 4g, 5g, servicios">
+    <meta name="author" content="Martín Delfini">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/png" href="img/icono-logo-mod.png">
+    <title>Contrata Fibra 1 Gb - TeComunico</title>
+</head>
+<body>
+    <header>
+            <nav class="nav-carrito">
+                <div class="logo-carrito">
+                    <a href="index.html"><span>TeComunico</span></a>
+                </div>
+            </nav>
+    </header>
+    <div class="body-contrato">
+        <div class="contenedor-contrato">
+            <section class="datos-personales">
+                <h2 class="h2-contrato">Datos personales</h2>
+                <form id="contrato" class="form-contrato" action="datos-personales.php" method="post">
+                    <input class="input-contrato" type="number" name="DNI_usuario" placeholder="DNI o NIE" required>
+                    <input class="input-contrato" type="text" name="nombre_usuario" placeholder="Nombre" required>
+                    <input class="input-contrato" type="text" name="primer_apellido_usuario" placeholder="Primer apellido" required>
+                    <input class="input-contrato" type="text" name="segundo_apellido_usuario" placeholder="Segundo apellido">
+                    <input class="input-contrato" type="email" name="email_usuario" placeholder="Email de contacto">
+                    <input class="input-contrato" type="tel" name=num_movil" placeholder="Móvil de contacto" required>
+                    <span class="anotacion-contrato">Te enviaremos un SMS para confirmar el pedido</span>
+                
+                <h2 class="h2-contrato">Dirección de instalación</h2>
+                
+                    <input class="input-contrato" type="text" name="direccion_instalacion" placeholder="Calle, número, localidad, código postal" required>
+                
+                <h2 class="h2-contrato">Forma de pago</h2>
+                
+                    <input class="input-contrato" type="number" name="iban" placeholder="Cuenta bancaria (IBAN)" required>
+                    <span class="anotacion-contrato">No se efectuará ningún cargo hasta que esté activado el servicio</span>
+                </form>
+            </section>
+            <section class="resumen-compra">
+                <h2 class="h2-contrato">Resumen del pedido</h2>
+                <div class="contenedor-resumen-pedido">
+                    <div class="parte-superior-resumen">
+                        <div class="linea">
+                            <span class="bold">Fibra 1Gb</span>
+                            <span class="mes-normal">45,90€/mes</span>
+                        </div>
+                        <div class="linea linea-promocion">
+                            <span>Promoción 3 meses</span>
+                            <span>35,90€/mes</span>
+                        </div>
+                        <div class="linea cuota-instalacion">
+                            <span>Cuota de alta</span>
+                            <span>0€</span>
+                        </div>
+                        <div class="linea cuota-instalacion">
+                            <span>Instalación</span>
+                            <span>0€</span>
+                        </div>
+                    </div>
+                    <div class="parte-inferior-resumen">
+                        <div class="linea bold">
+                            <span>Cuota mensual:</span>
+                            <span>35,90€/mes</span>
+                        </div>
+                        <p class="no-margin cuota-instalacion">Cuota sin promociones 45,90€/mes</p>
+                        <p class="no-margin cuota-instalacion">Todos los precios con IVA incluido</p>
+                    </div>
+                </div>
+                <form>
+                    <label class="container-contrato">He leído y acepto las condiciones generales, particulares y de desistimiento.
+                        <input type="checkbox" required>
+                        <span class="checkmark-contrato"></span>
+                    </label>
+                </form>
+                <button type="submit" form="contrato" class="boton-carrito">Confirmar pedido</button>
+                <span class="anotacion-confirmar">Te llamaremos en los próximos días para concertar una cita para la instalación.</span>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <p>2024. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

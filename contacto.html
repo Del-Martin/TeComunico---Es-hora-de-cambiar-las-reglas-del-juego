@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compañía telefónica que ofrezce servicios de datos, internet y llamadas.">
+    <meta name="keywords" content="llamadas, fibra, internet, 4g, 5g, servicios">
+    <meta name="author" content="Martín Delfini">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/png" href="img/icono-logo-mod.png">
+    <title>Contacto - TeComunico</title>
+</head>
+<body class="body-contacto">
+    <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><span>TeComunico</span></a>
+                </div>
+                <ul class="menu">
+                    <li><a href="internet.html">Internet</a></li>
+                    <li>Tarífas móviles</li>
+                    <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="separador-contacto"><h1>¿Necesitas que te llamemos?</h1></div>
+    <section class="section-contacto">
+            <p>Te llamaremos lo antes posible dentro de nuestro horario de atención al cliente: 9:00 a 22:00h de lunes a domingo.</p>
+            <h3>¿En qué podemos ayudarte?</h3>
+            <label class="container">Quiero información comercial
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Necesito ayuda
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <form id="contacto" class="form-contacto" action="solicitudes-llamadas.php" method="post">
+                <input class="input-contacto" type="text" name="nombre_usuario" placeholder="Nombre" required>
+                <input class="input-contacto" type="tel" name=num_telefono" placeholder="Teléfono" required>
+            </form>
+            <h3>¿Cuando prefieres que te llamemos?</h3>
+            <label class="container">Cuanto antes
+                <input type="radio" checked="checked" name="radio2">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Por la mañana (de 09:00 a 15:00)
+                <input type="radio" name="radio2">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Por la tarde (de 15:00 a 22:00)
+                <input type="radio" name="radio2">
+                <span class="checkmark"></span>
+            </label>
+            <div class="margin-checkbox">
+                <label class="container-checkbox">Acepto las condiciones de Privacidad de Datos
+                    <input type="checkbox">
+                    <span class="checkmark-checkbox"></span>
+                </label>
+                <label class="container-checkbox">Acepto recibir comunicaciones comerciales de TeComunico
+                    <input type="checkbox">
+                    <span class="checkmark-checkbox"></span>
+                </label>
+            </div>
+            <div class="centrar-contenido"><button type="submit" form="contacto" class="botones">Quiero que me llaméis</button></div>
+    </section>
+    <footer>
+        <p class="no-margin">2024. Todos los derechos reservados.</p>
+        <hr style="width: 80%;">
+        <p>Aviso Legal | Accesibilidad | Avisos de incidencias | Contratos | Privacidad | Centro de transparencia 
+            | Disputas online | Fondos Públicos | Cookies | Seguridad</p>
+    </footer>
+</body>
+</html>

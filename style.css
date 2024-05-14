@@ -1,0 +1,824 @@
+:root {
+    --color-primario: #48BDB9;
+    --color-secundario: #1A1A1A;
+    --color-terciario: #DBCC87;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--color-secundario);
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no-margin {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body-contacto, .body-contrato {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.separador-contacto {
+    background-image: url(img/img-fun.jpeg);
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    display: flex;
+    justify-content: center;
+    border-bottom: 6px solid var(--color-terciario);    
+}
+
+.separador-contacto h1 {
+    color: var(--color-terciario);
+}
+
+.section-contacto {
+    width: 50%;
+    padding: 32px;
+    box-sizing: border-box;
+    /* border-radius: 24px;
+    border: 4px solid var(--color-primario);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.10); */
+}
+
+.section-contacto h1 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.section-contacto h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.section-contacto p {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.main {
+    background-image: url('img/main-music-2.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex; 
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-carrito {
+    display: flex; 
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    justify-content: left;
+    align-items: center;
+    padding-left: 140px;
+}
+
+.logo a, .logo-carrito a {
+    text-decoration: none;
+    color: var(--color-primario);
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 16px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
+.menu a:hover {
+    text-decoration: underline #48BDB9 3px;
+    color: var(--color-secundario);
+}
+
+.contenedor-texto-landing {
+    margin-bottom: 280px;
+    margin-left: 100px;
+    font-size: 24px;
+}
+
+.subrayado-h1 {
+    margin-top: -100px;
+    width: 285px;
+    height: 10px;
+    background-color: #25F0E9;
+}
+
+.subrayado2-h1 {
+    margin-top: 65px;
+    width: 470px;
+    height: 10px;
+    background-color: #25F0E9;
+}
+
+.promociones-h1 {
+    margin-top: 64px;
+    margin-bottom: 48px;
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline var(--color-primario);
+}
+
+.promociones {
+    width: 90%;
+    margin: 40px auto 40px auto; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+}
+
+.promo {
+    width: 350px;
+    height: 580px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+.promo:hover {
+    width: 350px;
+    height: 580px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 4px 4px 25px 0px rgba(72, 189, 185, 0.40);
+    margin-top: -2px;
+
+}
+
+.contenido-promo {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.contenido-promo img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.contenido-promo h3, ul, h2 {
+    text-align: left;
+}
+
+.contenido-promo h3 {
+    margin: 8px 32px 8px 32px;
+}
+
+.contenido-promo ul {
+    margin: 8px 16px 0px 16px;
+}
+
+.contenido-promo h2 {
+    font-size: 32px;
+}
+
+.botones {
+    display: flex;
+    width: 250px;
+    height: 48px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 16px;
+    background: #48BDB9;
+    color: white;
+    font-size: 18px;
+}
+
+.botones:hover {
+    display: flex;
+    width: 250px;
+    height: 48px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 16px;
+    background: #2ca9a5;
+    color: white;
+    font-size: 18px;
+}
+
+.centrar-contenido {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Radio buttons CONTACTO */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container span {
+    margin-top: 4px;
+}
+
+
+/* Ocultar el botón de opción predeterminado del navegador */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+/* Crear un botón de opción personalizado */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+/* Al pasar el mouse, agregue un color de fondo gris. */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+/* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: var(--color-primario);
+}
+  
+/* Cuando el botón de opción esté marcado, agregue un fondo azul */
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Mostrar el indicador (punto/círculo) cuando esté marcado */
+.container input:checked ~ .checkmark:after{
+    display: block;
+}
+  
+/* Estilo del indicador (punto/círculo) */
+.container .checkmark:after {
+       top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+}
+
+.form-contacto {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
+    width: 95%;
+}
+
+.input-contacto {
+    height: 40px;
+    border: 1px solid var(--color-primario);
+    border-radius: 12px;
+    padding-left: 16px;
+    font-size: 18px;
+}
+
+
+/* Checkbox CONTACTO */
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-checkbox span {
+    margin-top: 4px;
+}
+  
+/* Ocultar la casilla de verificación predeterminada del navegador */
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Crear una casilla de verificación personalizada */
+.checkmark-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+  
+/* Al pasar el mouse, agregue un color de fondo gris. */
+.container-checkbox input:hover ~ .checkmark-checkbox {
+    background-color: #ccc;
+}
+  
+/* Cuando la casilla de verificación esté marcada, agregue un fondo azul. */
+.container-checkbox input:checked ~ .checkmark-checkbox {
+    background-color: var(--color-primario);
+}
+  
+/* Cree la marca de verificación/indicador (oculto cuando no está marcado) */
+.checkmark-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Mostrar la marca de verificación cuando esté marcado */
+.container-checkbox input:checked ~ .checkmark-checkbox:after {
+    display: block;
+}
+  
+/* Aplicar estilo a la marca de verificación/indicador */
+.container-checkbox .checkmark-checkbox:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.margin-checkbox {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* SEPARADOR INTERNET */
+
+.separador {
+    background-image: url(img/img-fun.jpeg);
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    object-position: top;
+    display: flex;
+    justify-content: center;
+    border-bottom: 6px solid var(--color-terciario);    
+
+}
+
+.separador h1 {
+    color: var(--color-terciario);
+    justify-content: center;
+}
+
+/* CATALOGO INTERNET */
+
+
+
+.contenedor-catalogo {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+
+.card-contenido {
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card-contenido h3 {
+    font-size: 18px;
+}
+
+.card-contenido ul {
+    padding-left: 16px;
+    font-size: 15px;
+    color: #828282; 
+}
+
+.span-promocion {
+    font-size: 14px;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    text-align: center;
+    background-color: #B22534;
+}
+
+.mes {
+    font-size: 16px;
+    color: #B22534;
+}
+
+.mes-normal {
+    font-size: 16px;
+    text-decoration: line-through;
+    display: inline-block;
+    color: #828282
+}
+
+.contenedor-precio-promo {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-contratar-informacion {
+    display: flex;
+    align-items: center;
+    margin: 16px auto 16px auto;
+}
+
+.boton-contratar, .boton-contratar-carrito {
+    background-color: var(--color-terciario);
+    color: white;
+    border: 0px solid;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px 24px 8px 24px;
+    margin-right: 16px;
+}
+
+.boton-contratar-carrito:hover {
+    background-color: #cebd72;
+    color: white;
+    border: 0px solid;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px 24px 8px 24px;
+    margin-right: 16px;
+}
+
+.contenedor-contratar-informacion a {
+    color: var(--color-terciario)
+}
+
+.precio-normal {
+    color: #828282;
+    text-decoration:line-through;
+    font-weight: 100;
+    margin: 8px 8px 0px 0px;
+}
+
+.precio-promo {
+    color: #B22534;
+    margin: 8px 0px 0px 0px;
+}
+
+.precio {
+    margin: 8px 0px 0px 0px;
+}
+
+.sin-permanencia {
+    margin: 0;
+    color: var(--color-secundario);
+    font-size: 14px;
+}
+
+.sin-permanencia-promo {
+    margin: 0;
+    color: #B22534;
+    font-size: 14px;
+}
+
+/* CONTRATO */
+.contenedor-contrato {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    gap: 40px;
+}
+
+.datos-personales {
+    flex: 3;
+}
+
+.resumen-compra {
+    flex: 2;
+}
+
+.h2-contrato {
+    font-size: 18px;
+}
+
+.form-contrato {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-contrato input {
+    margin-bottom: 16px;
+}
+
+.input-contrato {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 16px;
+    font-size: 16px;
+    width: 75%;
+}
+
+.anotacion-contrato {
+    font-size: 12px;
+    color: #999;
+    margin-top: -10px;
+    margin-left: 12px;
+}
+
+.anotacion-confirmar {
+    font-size: 12px;
+    color: #999;
+}
+
+.contenedor-resumen-pedido {
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.parte-superior-resumen, .parte-inferior-resumen {
+    padding: 16px;
+}
+
+.parte-inferior-resumen {
+    background-color: #eee;
+}
+
+.linea {
+    display: flex;
+    justify-content: space-between;
+}
+
+.linea-promocion {
+    font-size: 16px;
+    color: red;
+    margin-top: -4px;
+}
+
+.cuota-instalacion {
+    font-size: 14px;
+    color: #6B6C6F;
+    margin-top: 2px;
+}
+
+.boton-carrito {
+    width: 100%;
+    height: 48px;
+    border: 0px solid;
+    border-radius: 4px;
+    background-color: var(--color-terciario);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.boton-carrito:hover {
+    width: 100%;
+    height: 48px;
+    border: 0px solid;
+    border-radius: 4px;
+    background-color: #cebd72;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Checkbox CONTRATO */
+.container-contrato {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-contrato span {
+    margin-top: 3px;
+}
+  
+/* Ocultar la casilla de verificación predeterminada del navegador */
+.container-contrato input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Crear una casilla de verificación personalizada */
+.checkmark-contrato {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+  
+/* Al pasar el mouse, agregue un color de fondo gris. */
+.container-contrato input:hover ~ .checkmark-contrato {
+    background-color: #ccc;
+}
+  
+/* Cuando la casilla de verificación esté marcada, agregue un fondo azul. */
+.container-contrato input:checked ~ .checkmark-contrato {
+    background-color: var(--color-terciario);
+}
+  
+/* Cree la marca de verificación/indicador (oculto cuando no está marcado) */
+.checkmark-contrato:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Mostrar la marca de verificación cuando esté marcado */
+.container-contrato input:checked ~ .checkmark-contrato:after {
+    display: block;
+}
+  
+/* Aplicar estilo a la marca de verificación/indicador */
+.container-contrato .checkmark-contrato:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* QUIENES SOMOS */
+
+.titulo-quienes-somos {
+    font-size: 102px;
+    font-family: Plus Jakarta Sans, Helvetica;
+    text-align: center;
+    line-height: 1;
+}
+
+.texto-titulo-quienes-somos {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2;
+    width: 70%;
+}
+
+.contenedor-nuestro-equipo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 64px auto 64px auto;
+    gap: 64px;    
+}
+
+.contenedor-texto-nuestro-equipo {
+    flex: 3;
+    position: sticky;
+    top: 0;
+    height:fit-content;
+}
+
+.contenedor-img-nuestro-equipo-right {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.contenedor-img-nuestro-equipo-left {
+    flex: 2;
+    display: flex;
+   justify-content: left;
+}
+
+.img-nuestro-equipo {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+}
+
+.girar-horizontalmente {
+    transform: scaleX(-1);
+}
+
+
+/* PIE DE PÁGINA */
+footer {
+    width: 100%;
+    margin-top: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+    background-color: #eee;
+    }
+
+footer p {
+    font-size: 12px;
+}
